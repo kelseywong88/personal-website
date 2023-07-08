@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Slackside+One&family=Unbounded:wght@300;800&display=swap');
+
+body{
+    font-family: 'Unbounded', cursive;
+    color: rgb(21, 34, 53);
+}
+
+
+@media (max-width: 800px) {
+  .d-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .side.hidden{
+    display: none;
+  }
+
+}
+
+h1{
+    font-weight: 800;
+    font-size: 20vw;
+    margin: auto;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 7.5vh;
+}
+
+p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo{
+    font-weight: 800;
+}
+
+.box{
+    width: fit-content;
+    height: 70vh;
+}
+
+.colorBackground{
+    width: 100%;
+    height: 100vh;
+}
+
+.orange{
+    background-color: #ff663c;
+    background-image: url("/assets/images/noise.png");
+    background-size: 100%;
+    background-blend-mode: overlay;
+    color: black;
+}
+
+.black{
+    background-color: black;
+    color: white;
+    height: fit-content;
+}
+
+.blue{
+    background-color: #2A2AF2;
+    color: white;
+    height: fit-content;
+}
+
+.mapBackground{
+  background-color: #2A2AF2;
+  background-image: url("/assets/images/worldmap.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+}
+
+.side{
+    display: grid;
+    margin-top: auto;
+    
+}
+
+.line{
+  width: 1px;
+  height: 70px;
+  margin: auto;
+  border: 0.5px solid black;
+}
+
+.sideText{
+  padding: 15px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
+
+.ticket{
+  position: relative;
+
+}
+
+.ticketImg{
+  max-width: 500px;
+}
+
+.year {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  color: black;
+}
+
+.place {
+  position: absolute;
+  top: 100px;
+  left: 70px;
+  font-weight: 800;
+  font-size: 10vh;
+  color: black;
+}
+
+.ticketBtn{
+  position: absolute;
+  left: 330px;
+  bottom: 35px;
+}
+
+
+
+ /* rotate  */
+  circle {
+    fill: transparent;
+  }
+  
+  svg {
+    animation: rotating 10s linear infinite;
+  }
+  
+  .parent {
+    position: relative;
+    margin: -50px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width : 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  text {
+    fill: #2A2AF2;
+    font-size: 15px;
+    letter-spacing: 3.5px;
+  }
+
+  .white{
+    fill: white;
+    mix-blend-mode: difference;
+  }
+  
+  textPath::selection {
+    background: none;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+ 
+ 
